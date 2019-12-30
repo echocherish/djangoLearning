@@ -12,7 +12,7 @@
     {% if category %}
         <h1>{{ category.name }}</h1>
 
-        { % if pages %}
+        {% if pages %}
             <ul>
             {% for page in pages %}
             <li><a href="{{page.url}}">{{page.title}}</a></li>
